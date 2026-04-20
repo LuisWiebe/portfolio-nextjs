@@ -28,7 +28,7 @@ export default async function Home() {
     <section class="hero">
         <a href="About-me">
         <div class="image-container">
-             <img src="Link-SWS.webp" alt="Luis Wiebe profile image" loading="lazy" width="500" height="500" />  
+             <img src="Link-SWS.webp" alt="Luis Wiebe profile image stand in" loading="lazy" width="500" height="500" />  
         </div>
         </a>
     <div class="hero-text">
