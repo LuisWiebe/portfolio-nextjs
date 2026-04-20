@@ -6,7 +6,7 @@ import styles from "./page.module.css";
 export default async function Home() {
   return (
     <>
-     <header class="nav">
+     <header className="nav">
     <nav role="navigation" aria-label="Main Nav">
         <ul>
             <li><a href="index.html" aria-current="page">Home</a></li>
@@ -14,10 +14,10 @@ export default async function Home() {
             <li><a href="contact.html">Contact</a></li>
         </ul>
         <button id="hamburger">
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div className="hamburger">
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
             </div> 
         </button>
         
@@ -25,13 +25,18 @@ export default async function Home() {
 </header>
 
 {/* <!--HERO-- > */}
-    <section class="hero">
+    <section className="hero">
         <a href="About-me">
-        <div class="image-container">
-             <img src="Link-SWS.webp" alt="Luis Wiebe profile image stand in" loading="lazy" width="500" height="500" />  
-        </div>
+            <Image
+            
+            className={"profile-image"}
+            src={"Link-SWS.webp"}
+            alt="Luis Wiebe profile image stand in"
+            width={500}
+            height={500}
+            />
         </a>
-    <div class="hero-text">
+    <div className="hero-text">
         <h1>Luis Wiebe</h1>
             <p>
                 Adobe Illustrator, Photoshop, Lightroom, 
@@ -41,60 +46,96 @@ export default async function Home() {
     </section>
 
     {/* <!--WORK GRID-- > */}
-    <section class="work">
-        <div class="work-grid">
+    <section className="work">
+        <div className="work-grid">
 
-            <a href="Demo-Reels" class="card-container">
-                <img src="demo-reel.jpg" />
-                <div class="typography">Demo Reels</div>
+            <a href="Demo-Reels" className="card-container">
+                <Image
+                className={"card-image"}
+                src={"demo-reel.jpg"}
+                alt="Demo reel image"
+                width={500}
+                height={500}
+                />
+                <div className="typography">Demo Reels</div>
             </a>
 
-            <a href="Concept-Art" class="card-container">
-                <img src="vampgirls.jpg" />
-                <div class="typography">Concept Art</div>
+            <a href="Concept-Art" className="card-container">
+                <Image
+                className={"card-image"}
+                src={"vampgirls.jpg"}
+                alt="Vampgirl concept art"
+                width={500}
+                height={500}
+                />
+                <div className="typography">Concept Art</div>
             </a>
 
 
-            <a href="Edited-Photos" class="card-container">
-                <img src="Howl-Photo.jpg" />
-                <div class="typography">Edited Photos</div>
+            <a href="Edited-Photos" className  ="card-container">
+                <Image
+                className={"card-image"}
+                src={"Howl-Photo.jpg"}
+                alt="Howl's Moving Castle photo"
+                width={500}
+                height={500}
+                />
+                <div className="typography">Edited Photos</div>
             </a>
 
-            <a href="Vector-Graphics" class="card-container">
-                <img src="GDES131_IllustrativeSet_FA25_Landscape_LWiebe.png" />
-                <div class="typography">Vector Graphics</div>
+            <a href="Vector-Graphics" className="card-container">
+                <Image
+                className={"card-image"}
+                src={"GDES131_IllustrativeSet_FA25_Landscape_LWiebe.png"}
+                alt="Landscape illustration"
+                width={500}
+                height={500}
+                />
+                <div className="typography">Vector Graphics</div>
             </a>
 
 
-            <a href="Collaborative-Work" class="card-container">
-                <img src="collab.jpg" />
-                <div class="typography">Collaborative Work</div>
+            <a href="Collaborative-Work" className="card-container">
+                <Image
+                className={"card-image"}
+                src={"collab.jpg"}
+                alt="Collaborative work image"
+                width={500}
+                height={500}
+                />
+                <div className="typography">Collaborative Work</div>
             </a>
 
-            <a href="Fanart" class="card-container">
-                <img src="Sunlight.jpg" />
-                <div class="typography">Fanart</div>
+            <a href="Fanart" className="card-container">
+                <Image
+                className={"card-image"}
+                src={"Sunlight.jpg"}
+                alt="Sunlight fanart"
+                width={500}
+                height={500}
+                />
+                <div className="typography">Fanart</div>
             </a>
         </div>
     </section>
 
 {/* <!--ABOUT--> */}
-<section class="about section">
+<section className="about section">
     <h2>ABOUT ME</h2>
-    <p class="subtitles">
+    <p className="subtitles">
         2D Character Artist, Caffiene Junky, Video-Game Enthusiast
     </p>
-    <p class="about-text">
+    <p className="about-text">
         My name is Luis Wiebe. I'm a lover of video games, character design, photography, fan-made content, and more.
         I work primarily in Clip Studio Paint, Illustrator, Photoshop, and Lightroom.
     </p>
 </section>
 
 {/* <!--CONTACT--> */}
-    <section class="contact section">
-      <div class="contact-card">
-        <div class="skills">
-          <div class="skills-proficient">
+    <section className="contact section">
+      <div className="contact-card">
+        <div className="skills">
+          <div className="skills-proficient">
             <h4>Proficient</h4>
             <ul>
               <li>Clip Studio</li>
@@ -105,7 +146,7 @@ export default async function Home() {
               <li>Premiere Pro</li>
             </ul>
           </div>
-          <div class="skills-novice">
+          <div className="skills-novice">
             <h4>Novice</h4>
             <ul>
               <li>After Effects</li>
@@ -113,7 +154,7 @@ export default async function Home() {
             </ul>
           </div>
         </div>
-        <div class="contact-info">
+        <div className="contact-info">
           <ul>
             <li>example@gamil.com</li>
             <li>@sketchypadd</li>
@@ -122,7 +163,7 @@ export default async function Home() {
           </ul>
         </div>
       </div>
-      <div class="contact-illustration"></div>
+      <div className="contact-illustration"></div>
     </section>
     </>
   );
