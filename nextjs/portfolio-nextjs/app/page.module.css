@@ -1,0 +1,396 @@
+/*Navigation*/
+.nav {
+    margin: auto;
+    padding: 20px 40px;
+}
+
+.nav nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #a686bc;
+    border-radius: 0;
+    position: relative;
+}
+
+.navLinks {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 14px 16px;
+}
+/* 
+#hamburger {
+    width: 30px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    display: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* #hamburger:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+} */
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 80px;
+}
+
+/*Stand in Profile Image*/
+.imageContainer {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 1;
+    background: #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 50%;
+    box-sizing: border-box;
+    margin: 15px 30px;
+    overflow: hidden;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+/* img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+} */
+
+/*LUIS HEADER*/
+.heroText h1 {
+    font-size: 150px;
+    line-height: 1;
+    color: white;
+    padding: 15px 20px;
+}
+
+.heroText p {
+    font-size: 45px;
+    max-width: 800px;
+    color: white;
+    display: flex;
+    margin-top: -105px;
+    padding: 15px 20px;
+
+}
+
+.section {
+    max-width: 100%;
+    margin: 0 80px;
+}
+
+/* WORK GRID */
+.work {
+    padding: 40px 80px;
+}
+
+.workGrid {
+    display: flex;
+    flex-grow: 2;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.cardContainer {
+    width: 100%;
+    max-width: 30%;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    background: #000;
+    align-items: flex-end;
+    padding: 15px;
+
+}
+
+.cardContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardContainer .typography {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.card {
+    background: #000;
+    color: #fff;
+    height: 160px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+/* ABOUT */
+.about {
+    text-align: center;
+    padding: 80px 80px 40px;
+    color: white;
+    font-size: 24px;
+}
+
+.about h2 {
+    font-size: 68px;
+    color: white;
+}
+
+.subtitle {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.aboutText {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 34px;
+    line-height: 1.6;
+    color: white;
+}
+
+/* CONTACT */
+.contact {
+    background: #000;
+    display: flex;
+    gap: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.contactCard {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #fff;
+    padding: 40px 80px 80px;
+    flex: 1;
+}
+
+.contactCard h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contactIllustration {
+    background-color: white;
+    width: 33%;
+}
+
+.skills {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    gap: 30px;
+}
+
+.skills h4 {
+    margin-bottom: 10px;
+    font-size: 34px;
+}
+
+.skills ul {
+    list-style: none;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.contactInfo {
+    font-size: 32px;
+    line-height: 1.6;
+    color: white;
+    display: flex;
+    gap: 24px;
+}
+
+.contactInfo ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.contactInfo ul li {
+    white-space: nowrap;
+    margin-right: 24px;
+}
+
+
+.contactImage {
+    background: #000;
+    flex: 1;
+    border-radius: 12px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .nav nav {
+        padding: 15px 20px;
+    }
+
+    .nav ul a {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .heroText h1 {
+        font-size: 48px;
+    }
+
+    .heroText p {
+        font-size: 18px;
+        margin-top: -20px;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    /* #hamburger {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    } */
+
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: #a686bc;
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    nav ul.open {
+        max-height: 300px;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul a {
+        width: 100%;
+        padding: 15px 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* #hamburger.active .bar:nth-child(1) {
+        transform: translateY(11px) rotate(45deg);
+    }
+
+    #hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #hamburger.active .bar:nth-child(3) {
+        transform: translateY(-11px) rotate(-45deg);
+    } */
+
+    .hero {
+        flex-direction: column;
+        padding: 15px 10px;
+        align-items: center;
+    }
+
+    .heroText h1 {
+        font-size: 52px;
+        padding: 5px 10px;
+    }
+
+    .heroText p {
+        font-size: 28px;
+        padding: 5px 10px;
+        margin-top: 0;
+    }
+
+    .imageContainer {
+        max-width: 90vw;
+        width: 100%;
+        margin: 0 auto 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .imageContainer {
+        max-width: 95vw;
+        width: 100%;
+        margin: 0 auto 15px;
+    }
+
+    .hero {
+        padding: 10px 5px;
+        align-items: center;
+    }
+
+    .heroText h1 {
+        font-size: 40px;
+        padding: 5px 10px;
+    }
+
+    .heroText p {
+        font-size: 22px;
+        padding: 5px 10px;
+    }
+}
