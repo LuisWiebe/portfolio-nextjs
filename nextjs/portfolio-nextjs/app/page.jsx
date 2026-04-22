@@ -2,6 +2,13 @@ import Image from "next/image";
 import styles from "./page.module.css";
 // import Navigation from "@/components/header/Navigation";
 // import Footer from "@/components/footer/Footer";
+import LinkSWS from "@/assets/Link-SWS.webp";
+import DemoReel from "@/assets/demo-reel.jpg";
+import VampGirls from "@/assets/vampgirls.jpg";
+import HowlPhoto from "@/assets/Howl-Photo.jpg";
+import Landscape from "@/assets/GDES131_IllustrativeSet_FA25_Landscape_LWiebe.png";
+import Collab from "@/assets/collab.jpg";
+import Sunlight from "@/assets/Sunlight.jpg";
 
 
 
@@ -32,7 +39,7 @@ export default async function Home() {
         <a href="About-me">
             <Image
             className={"profile-image"}
-            src={"Link-SWS.webp"}
+            src={LinkSWS.src}
             alt="Luis Wiebe profile image stand in"
             width={500}
             height={500}
@@ -54,7 +61,7 @@ export default async function Home() {
             <a href="Demo-Reels" className="card-container">
                 <Image
                 className={"card-image"}
-                src={"demo-reel.jpg"}
+                src={DemoReel.src}
                 alt="Demo reel image"
                 width={500}
                 height={500}
@@ -65,7 +72,7 @@ export default async function Home() {
             <a href="Concept-Art" className="card-container">
                 <Image
                 className={"card-image"}
-                src={"vampgirls.jpg"}
+                src={VampGirls.src}
                 alt="Vampgirl concept art"
                 width={500}
                 height={500}
@@ -77,7 +84,7 @@ export default async function Home() {
             <a href="Edited-Photos" className  ="card-container">
                 <Image
                 className={"card-image"}
-                src={"Howl-Photo.jpg"}
+                src={HowlPhoto.src}
                 alt="Howl's Moving Castle photo"
                 width={500}
                 height={500}
@@ -88,7 +95,7 @@ export default async function Home() {
             <a href="Vector-Graphics" className="card-container">
                 <Image
                 className={"card-image"}
-                src={"GDES131_IllustrativeSet_FA25_Landscape_LWiebe.png"}
+                src={Landscape.src}
                 alt="Landscape illustration"
                 width={500}
                 height={500}
@@ -100,7 +107,7 @@ export default async function Home() {
             <a href="Collaborative-Work" className="card-container">
                 <Image
                 className={"card-image"}
-                src={"collab.jpg"}
+                src={Collab.src}
                 alt="Collaborative work image"
                 width={500}
                 height={500}
@@ -111,7 +118,7 @@ export default async function Home() {
             <a href="Fanart" className="card-container">
                 <Image
                 className={"card-image"}
-                src={"Sunlight.jpg"}
+                src={Sunlight.src}
                 alt="Sunlight fanart"
                 width={500}
                 height={500}
