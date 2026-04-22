@@ -1,5 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+// import Navigation from "@/components/header/Navigation";
+// import Footer from "@/components/footer/Footer";
 
 
 
@@ -7,6 +9,7 @@ export default async function Home() {
   return (
     <>
      <header className="nav">
+        {/* <Navigation /> */}
     <nav role="navigation" aria-label="Main Nav">
         <ul>
             <li><a href="index.html" aria-current="page">Home</a></li>
@@ -20,7 +23,7 @@ export default async function Home() {
                 <span className="bar"></span>
             </div> 
         </button>
-        
+        {/* <Footer /> */}
     </nav>
 </header>
 
