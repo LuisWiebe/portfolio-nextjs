@@ -31,7 +31,6 @@ export default async function Home() {
     <section className="hero">
         <a href="About-me">
             <Image
-
             className={"profile-image"}
             src={"Link-SWS.webp"}
             alt="Luis Wiebe profile image stand in"
