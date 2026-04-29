@@ -1,9 +1,9 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "../page.module.css";
 
 
 
-export default async function About() {}
+export default async function About() {
   return (
         
         <head >
@@ -42,4 +42,5 @@ export default async function About() {}
                     </section>
                 </main>
             </body>
-</head>);
+        </head>);
+}

@@ -27,7 +27,7 @@
     overflow: hidden;
     padding: 14px 16px;
 }
-/* 
+
 #hamburger {
     width: 30px;
     height: 40px;
@@ -40,12 +40,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-} */
+} 
 
-/* #hamburger:focus {
+.hamburger:focus {
     outline: 2px solid white;
     outline-offset: 2px;
-} */
+} 
 
 .bar {
     display: block;
@@ -88,10 +88,10 @@
     transition: transform 0.3s ease;
 }
 
-/* img:hover {
+img:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
-} */
+} 
 
 /*LUIS HEADER*/
 .heroText h1 {
@@ -277,10 +277,10 @@
         padding: 15px 20px;
     }
 
-    /* .nav ul a {
+     .nav ul a {
         font-size: 16px;
         padding: 10px 15px;
-    } */
+    } 
 
     .hero {
         flex-direction: column;
@@ -302,12 +302,12 @@
 }
 
 @media (max-width: 600px) {
-    /* #hamburger {
+     #hamburger {
         display: flex;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-    } */
+    } 
 
     /* nav ul {
         position: absolute;
@@ -336,7 +336,7 @@
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     } */
 
-    /* #hamburger.active .bar:nth-child(1) {
+     #hamburger.active .bar:nth-child(1) {
         transform: translateY(11px) rotate(45deg);
     }
 
@@ -346,7 +346,7 @@
 
     #hamburger.active .bar:nth-child(3) {
         transform: translateY(-11px) rotate(-45deg);
-    } */
+    } 
 
     .hero {
         flex-direction: column;
