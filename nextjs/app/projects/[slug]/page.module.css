@@ -302,12 +302,12 @@ img:hover {
 }
 
 @media (max-width: 600px) {
-     #hamburger {
+     /* #hamburger {
         display: flex;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-    } 
+    }  */
 
     /* nav ul {
         position: absolute;
@@ -322,9 +322,9 @@ img:hover {
         transition: max-height 0.3s ease-in-out;
     } */
 
-    nav ul.open {
+    /* nav ul.open {
         max-height: 300px;
-    }
+    } */
 
     /* nav ul li {
         width: 100%;
