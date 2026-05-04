@@ -1,14 +1,20 @@
 import projects from "@/app/data/projects";
 
-export default function ProjectPage ({ params }) {
-  const project = projects.find((project) => project.slug === params.slug);
-  if (!project) {
-    return <h1>Project not found</h1>
-  }
+
+export default function ProjectsPage() {
   return (
     <main>
-        <h1>{project.title}</h1>
-        <p> {project.description}</p>
+      <h1>Projects</h1>
+
+      {projects.map((project) => (
+        <article key={project.slug}>
+          <h2>{project.title}</h2>
+          <p>{project.description}</p>
+          <Link href={`/projects/${project.slug}`}>View Project
+          </Link>
+
+        </article>
+      ))}
     </main>
   )
 }

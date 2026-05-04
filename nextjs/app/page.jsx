@@ -12,25 +12,6 @@ import Landscape from "@/assets/GDES131_IllustrativeSet_FA25_Landscape_LWiebe.pn
 import Collab from "@/assets/collab.jpg";
 import Sunlight from "@/assets/Sunlight.jpg";
 
-export default function ProjectsPage () {
-    return (
-        <main>
-            <h1>Projects</h1>
-
-            {projects.map((project) => (
-                <article key={project.slug}>
-                    <h2>{project.title}</h2>
-                    <p>{project.description}</p>
-                    <Link href={`/projects/${project.slug}`}>View Project
-                        </Link>
-                        
-                </article>
-            ))}
-        </main>
-    )
-}
-
-
 
 export default async function Home() {
   return (
