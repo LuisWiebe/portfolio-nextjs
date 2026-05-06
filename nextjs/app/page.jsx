@@ -82,7 +82,7 @@ export default async function Home() {
             </a>
 
 
-            <a href="Edited-Photos" className  ="card-container">
+            <a href="Edited-Photos" className={styles.cardContainer}>
                 <Image
                 className={styles.cardImage}
                 src={HowlPhoto.src}

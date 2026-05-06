@@ -1,24 +1,22 @@
-import Image from "next/image";
+import Link from "next/link";
 import styles from "../page.module.css";
 
-
-
-export default async function About() {
+export default function About() {
   return (
-        
-        <head >
-            <body>
-                <header className="site-header">
-                    <nav className="main-nav" aria-label="Main navigation">
-                        <a className="nav-link" href="index.html">Home</a>
-                        <a className="nav-link active" href="about.html">About</a>
-                        <a className="nav-link" href="contact.html">Contact</a>
+    <>
+                <header className={styles.nav}>
+                    <nav aria-label="Main navigation">
+                        <ul className={styles.navLinks}>
+                            <li><Link href="/">Home</Link></li>
+                            <li><Link href="/about">About</Link></li>
+                            <li><Link href="/contact">Contact</Link></li>
+                        </ul>
                     </nav>
                 </header>
 
-                <main className="page-wrap">
-                    <section className="hero">
-                        <article className="hero-text">
+                <main className={styles.aboutSection}>
+                    <section className={styles.hero}>
+                        <article className={styles.heroText}>
                             <h1>Nice to Meet You!</h1>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
@@ -28,19 +26,19 @@ export default async function About() {
                             </p>
 
                             <h2>Primary Workspaces</h2>
-                            <div className="workspace-grid">
-                                <div className="workspace-item">Ps</div>
-                                <div className="workspace-item">Ai</div>
-                                <div className="workspace-item">Lr</div>
-                                <div className="workspace-item">Clip Studio Paint</div>
+                            <div className={styles.workspaceGrid}>
+                                <div className={styles.workspaceItem}>Ps</div>
+                                <div className={styles.workspaceItem}>Ai</div>
+                                <div className={styles.workspaceItem}>Lr</div>
+                                <div className={styles.workspaceItem}>Clip Studio Paint</div>
                             </div>
                         </article>
 
-                        <aside className="hero-panel">
-                            <div className="image-container"></div>
+                        <aside className={styles.heroPanel}>
+                            <div className={styles.imageContainer}></div>
                         </aside>
                     </section>
                 </main>
-            </body>
-        </head>);
+    </>
+  );
 }
