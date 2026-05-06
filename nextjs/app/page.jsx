@@ -2,8 +2,6 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
 import projects from "@/app/data/projects";
-// import Navigation from "@/components/header/Navigation";
-// import Footer from "@/components/footer/Footer";
 import LinkSWS from "@/assets/Link-SWS.webp";
 import DemoReel from "@/assets/demo-reel.jpg";
 import VampGirls from "@/assets/vampgirls.jpg";
@@ -19,10 +17,10 @@ export default async function Home() {
      <header className={styles.nav}>
         {/* <Navigation /> */}
     <nav role="navigation" aria-label="Main Nav">
-        <ul>
-            <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+        <ul className={styles.navLinks}>
+            <li><Link href="/">Home</Link></li>
+            <li><Link href="/about">About</Link></li>
+            <li><Link href="/contact">Contact</Link></li>
         </ul>
         <button id="hamburger">
             <div className={styles.hamburger}>
