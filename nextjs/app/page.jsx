@@ -168,7 +168,7 @@ export default async function Home() {
           <ul>
             <li>example@gamil.com</li>
             <li>@sketchypadd</li>
-            <li>(208)666-6666</li>
+            <li>(208)666-7777</li>
             <li>in/luis-wiebe</li>
           </ul>
         </div>
