@@ -158,7 +158,7 @@
 
 .workGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
 
@@ -311,6 +311,10 @@
         gap: 18px;
     }
 
+    .workGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .contactSection {
         grid-template-columns: 1fr;
     }
@@ -324,6 +328,10 @@
 
     .work {
         padding: 32px 20px;
+    }
+
+    .workGrid {
+        grid-template-columns: 1fr;
     }
 
     .heroText h1 {
