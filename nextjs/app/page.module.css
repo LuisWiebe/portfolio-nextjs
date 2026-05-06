@@ -11,7 +11,7 @@
     align-items: center;
     gap: 40px;
     padding: 24px 32px;
-    background-color: #a686bc;
+    background: linear-gradient(180deg, #f5f1ff 0%, #c9b4e3 100%);
     border-radius: 16px;
 }
 
