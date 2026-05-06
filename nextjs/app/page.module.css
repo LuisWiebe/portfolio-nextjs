@@ -7,10 +7,10 @@
 
 .nav nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding: 20px 24px;
+    gap: 40px;
+    padding: 24px 32px;
     background-color: #a686bc;
     border-radius: 16px;
 }
@@ -19,7 +19,7 @@
 .navLinks {
     display: flex;
     list-style: none;
-    gap: 32px;
+    gap: 48px;
     margin: 0;
     padding: 0;
 }
@@ -27,7 +27,7 @@
 .nav nav a {
     color: #fff;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-weight: 600;
     transition: color 0.2s ease;
 }
