@@ -1,7 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
-import projects from "@/app/data/projects";
 import LinkSWS from "@/assets/Link-SWS.webp";
 import DemoReel from "@/assets/demo-reel.jpg";
 import VampGirls from "@/assets/vampgirls.jpg";
@@ -9,9 +8,14 @@ import HowlPhoto from "@/assets/Howl-Photo.jpg";
 import Landscape from "@/assets/GDES131_IllustrativeSet_FA25_Landscape_LWiebe.png";
 import Collab from "@/assets/collab.jpg";
 import Sunlight from "@/assets/Sunlight.jpg";
+import { projects } from "@/app/data/projects";
 
 
 export default async function Home() {
+
+
+    const promoted = projects.filter(project => project.promote);
+
   return (
     <>
      <header className={styles.nav}>
@@ -57,18 +61,23 @@ export default async function Home() {
     <section className={styles.work}>
         <div className={styles.workGrid}>
 
-            <a href="Demo-Reels" className={styles.cardContainer}>
-                <Image
-                className={styles.cardImage}
-                src={DemoReel.src}
-                alt="Demo reel image"
-                width={500}
-                height={500}
-                />
-                <div className={styles.typography}>Demo Reels</div>
-            </a>
 
-            <a href="Concept-Art" className={styles.cardContainer}>
+                  {promoted.map((project) => (
+
+            <a href={`/projects/${project.slug}`} className={styles.cardContainer}>
+            <Image
+            className={styles.cardImage}
+            src={project.image}
+            alt={project.title}
+            width={500}
+            height={500}
+            />
+            <div className={styles.typography}>{project.title}</div>
+        </a>
+
+        ))}
+
+            {/* <a href="Concept-Art" className={styles.cardContainer}>
                 <Image
                 className={styles.cardImage}
                 src={VampGirls.src}
@@ -123,7 +132,7 @@ export default async function Home() {
                 height={500}
                 />
                 <div className={styles.typography}>Fanart</div>
-            </a>
+            </a> */}
         </div>
     </section>
 
