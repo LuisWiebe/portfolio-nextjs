@@ -9,8 +9,3 @@ export default function robots() {
         sitemap: 'https://portfolio-nextjs-peach-ten.vercel.app/sitemap.xml',
     }
 }
-{
-    userAgent: '*',
-        allow; '/',
-            disallow; ['/admin', '/private'],
-}
