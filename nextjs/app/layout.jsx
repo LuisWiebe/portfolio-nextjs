@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { GoogleAnalytics } from '@next/third-parties/google'
+<meta name="google-site-verification" content="JzZJfFNYQlrXHnoD2sf5IemcNcfX1yBll85Juu7ZDog" />
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
